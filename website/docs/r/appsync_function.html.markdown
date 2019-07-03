@@ -15,7 +15,7 @@ Provides an AppSync Function.
 ```hcl
 resource "aws_appsync_graphql_api" "test" {
   authentication_type = "API_KEY"
-  name                = "tf-example"
+  name                = "tf_example"
   schema              = <<EOF
 type Mutation {
     putPost(id: ID!, title: String!): Post
